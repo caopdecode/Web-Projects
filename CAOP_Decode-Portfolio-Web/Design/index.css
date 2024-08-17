@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Lato;
+}
+
+:root{
+    --darkBlue-color: #071952;
+    --darkLightBlue-color: #088395;
+    --white-color: #EBF4F6;
+    --light-blue-color: #37B7C3;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+a:hover{
+    color: var(--light-blue-color);
+    transition: 0.5s;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: var(--darkBlue-color);
+}
+
+header h1{
+    margin: 10px;
+    color: var(--light-blue-color);
+}
+
+header h1:hover{
+    color: rgb(58, 241, 241);
+}
+
+#navBar .bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+#navBar .bar li{
+    margin: 10px;
+    
+}
+
+#Inicio{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white-color);
+}
+
+#Inicio .columnGrid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+#Inicio .columnGrid:nth-child(1) {
+    background: url('InicioGrid/Column1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no repeat;
+}
+
+#Inicio .columnGrid:nth-child(2) {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('InicioGrid/Column2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no repeat;
+}
+
+#Inicio .columnGrid:nth-child(3) {
+    background: url('InicioGrid/Column3.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no repeat;
+}
+
+#Inicio h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--darkLightBlue-color);
+    font-weight: bold;
+    font-size: 30px;
+    background-color: var(--white-color);
+    width: 450px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#About{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    background-color: var(--white-color);
+}
+
+#About h2{
+    position: relative;
+    top: 70px;
+    color: var(--darkLightBlue-color);
+}
+
+#About .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+
+#About .container .infoBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 220px;
+    border: 5px solid var(--light-blue-color);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#About .container .infoBox h4{
+    position: absolute;
+    color: var(--white-color);
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.infoBox:nth-child(1){
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(profilePic.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.infoBox:nth-child(1):hover{
+    background-image: url(profilePic.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+
+.infoBox:nth-child(2){
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(Projects.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.infoBox:nth-child(2):hover{
+    background-image: url(Projects.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: var(--darkBlue-color);
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons li {
+    display: inline;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: var(--darkLightBlue-color);/* Cambia el color según sea necesario */
+    font-size: 24px; /* Ajusta el tamaño de los iconos */
+}
+
+.social-icons a:hover{
+    color: var(--light-blue-color);
+}
+
+/* Paginas */
+
+#Who{
+    position: fixed; /* Cambia a 'fixed' para que se mantenga en su lugar al hacer scroll */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición para que quede centrado */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    height: 70vh;
+    background-color: var(--darkBlue-color);
+    z-index: 1000; /* Asegura que el elemento se superponga sobre otros */
+    border-radius: 8px; /* Opcional: agrega bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Opcional: agrega una sombra */
+    color: var(--light-blue-color);
+    border: 10px solid var(--darkLightBlue-color);
+}
+
+#Who .closeButton{
+    display: flex;
+    position: relative;
+    top: 50px;
+    right: 20px;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#Who .closeButton #close{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#Who .whoContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+}
+
+#Who .imgBox{
+    width: 250px;
+    height: 40vh;
+    margin: 0px 20px;
+}
+
+#Who .imgBox img{
+    width: 250px;
+    height: 40vh;
+    border-radius: 10px;
+}
+
+#Projects{
+    position: fixed; /* Cambia a 'fixed' para que se mantenga en su lugar al hacer scroll */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición para que quede centrado */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    height: 70vh;
+    background-color: var(--darkBlue-color);
+    z-index: 1000; /* Asegura que el elemento se superponga sobre otros */
+    border-radius: 8px; /* Opcional: agrega bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Opcional: agrega una sombra */
+    color: var(--light-blue-color);
+    border: 10px solid var(--darkLightBlue-color);
+}
+
+#Projects h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#Projects .closeButton{
+    display: flex;
+    position: relative;
+    top: 90px;
+    right: 20px;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#Projects .closeButton #closePro{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#Projects .projectContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+}
+
+#Project .imgBox{
+    width: 250px;
+    height: 40vh;
+    margin: 0px 20px;
+}
+
+#Projects .imgBox img{
+    width: 250px;
+    height: 40vh;
+    border-radius: 10px;
+}
+
+#Projects .projectContainer table{
+    width: 700px;
+}
+
+#Projects .projectContainer table th{
+    font-size: 20px;
+}
+
+#Projects .projectContainer table td{
+    border: 1px solid var(--light-blue-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#Projects .projectContainer table td:hover{
+    background-color: var(--light-blue-color);
+    cursor: pointer;
+}
