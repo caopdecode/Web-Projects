@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+            <title>Vamgoc</title>
+            <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <p class="logo">Vamgoc World</p>
+                <nav>
+                    <a href="#Acerca">Sobre Mi</a>
+                    <a href="#Galeria">Galeria</a>
+                    <a href="#Contacto">Contacto</a>
+                </nav>
+            </div>
+        </header>
+
+        <section id="hero">
+            <h1>Bienvenido a <br> Mi Mundo</h1>
+            <a href="#Galeria"><button>MIRA MI TRABAJO</button></a>
+        </section>
+
+        <section id="Acerca">
+            <div class="container">
+                <div class="img_Cont">
+
+                </div>
+                <div class="texto">
+                    <h2>¿Quien es <strong>Vamgoc</strong>?</h2>
+                    
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Cupiditate iste possimus, dolores illum reprehenderit error accusantium nesciunt
+                        maxime, architecto suscipit minima cumque amet, natus illo
+                        autem fugit aliquam deserunt corrupti.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Galeria">
+            <div class="container">
+                <h2>Galeria</h2>
+                <div class="tiposDeFotos">
+                    <div class="fotografias">
+                        <h3>Outfits</h3>
+                        
+                        <a href="outfits.html"><button>Ver Mas</button></a>
+                        
+                    </div>
+                    <div class="fotografias">
+                        <h3>Sesiones</h3>
+                        
+                       <a href="sesiones.html"><button>Ver Mas</button></a>
+                        
+                    </div>
+                    <div class="fotografias">
+                        <h3>B&W</h3>
+                        <a href="Blanco_y_Negro.html"><button>Ver Mas</button></a>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <section id="Contacto">
+            <div class="container">
+                <h2><strong>Contacto</strong></h2>
+                <div class="formulario">
+                    <form enctype="text/plain" action="mailto: vamgoc.contact@gmail.com" method="post">
+                        <ul>
+                            <li>
+                                <label for="name">Nombre:</label>
+                                <input type="text" id="name" name="user_name" required>
+                            </li>
+
+                            <li>
+                                <label for="mail">Correo Eléctronico:</label>
+                                <input type="email" id="mail" name="user_mail" required>
+                            </li>
+
+                            <li>
+                                <label for="msg">Mensaje:</label>
+                                <textarea id="msg" name="user_message" required></textarea>
+                            </li>
+                            <li>
+                                <button type="submit" value="send">Enviar</button>
+                            </li>
+                        </ul>
+                    </form>
+                    <div class="img_ContContact"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; Vamgoc 2022</p>
+            </div>
+        </footer>
+    </body>
+</html>

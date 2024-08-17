@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Gonzi Condensed PERSONAL USE Light";
+    src: url(Fuentes/GonziCondensedPERSONALUSE-Light.otf);
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: "Gonzi Condensed PERSONAL USE Light", sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 4em;}
+h2{font-size: 2.73em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button
+{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0, 0.3);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(0, 174, 255);
+}
+
+button:hover
+{
+    background-color: rgb(0, 158, 231);
+}
+
+.container
+{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header
+{
+    background-color: rgb(240,240,240);
+}
+
+header .logo
+{
+    margin: 0;
+    padding: 25px 20px;
+    font-weight: bold;
+    font-size: 1.45em;
+    color: rgb(0, 174, 255);
+    font-family: "Gonzi Condensed PERSONAL USE Light";
+    
+}
+
+header .container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a
+{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover
+{
+    color: rgb(0, 158, 231);
+}
+
+#hero
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(Imagenes/Header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1
+{
+    margin: 0px;
+}
+
+#Acerca .container
+{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+strong { color:rgb(0, 174, 255)}
+
+#Galeria
+{
+    background-color: rgb(40,40,40);
+    color: white;
+    text-align: center;
+}
+
+#Galeria .container
+{
+    padding: 150px 12px;
+}
+
+#Galeria h2
+{
+    margin-top: 0;
+}
+
+#Galeria p
+{
+    display: none;
+}
+
+#Galeria .fotografias
+{
+    background-position: center center;
+    background-size: cover;
+    padding: 70px;
+    margin: 35px;
+    border-radius: 14px;
+}
+
+.fotografias:first-child
+{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(Imagenes/Outfits.jpg);
+    
+}
+
+.fotografias:nth-child(2)
+{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(Imagenes/Sesiones.jpg);
+}
+
+.fotografias:nth-child(3)
+{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(Imagenes/blancoYnegro.jpeg);    
+}
+
+#Contacto .container
+{
+    text-align: center;
+    padding: 50px 25px;
+}
+
+#Contacto .container form 
+{
+   margin: auto;
+   width: 350px;
+   padding: 1em;
+   border: 1px solid rgb(0, 0, 0, 0.3);
+   border-radius: 1em;
+}
+
+#Contacto .container form ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#Contacto .container form li + li
+{
+    margin-top: 1em;
+}
+
+#Contacto .container form label
+{
+    display: inline-block;
+    width: 90px;
+}
+
+#Contacto .container form input, textarea
+{
+    font-family: sans-serif;
+    font-size: 0.8em;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+#Contacto .container form input:focus, textarea:focus
+{
+    border-color: #000;
+}
+
+#Contacto .container form textarea
+{
+    resize: none;
+    vertical-align: top;
+    height: 5em;
+}
+
+#Contacto .container button
+{
+    text-align: center;
+    font-size: 0.8em;
+   
+    margin-left: .5em;
+}
+
+footer
+{
+    background-color: rgb(240,240,240);
+}
+
+
+footer .container 
+{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    height: 50px;
+    font-size: 10px;
+    font-family: sans-serif;
+    margin-right: 1em;
+}
+
+footer .container p
+{
+    margin: 0;
+}
+
+@media (min-width: 720px)
+{
+    #hero h1
+    {
+        font-size: 5em;
+    }
+
+    header
+    {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container
+    {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav
+    {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+
+    #Acerca .container
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #Acerca .texto
+    {
+        width: 50%;
+        max-width: 590px;
+        text-align: initial;
+        padding-left: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #Acerca h2
+    {
+        margin-top: 0px;
+    }
+
+    #Acerca .img_Cont
+    {
+        background-image: url(Imagenes/SobreMi.jpg);
+        background-size: cover;
+        background-position: center center;
+        border-radius: 1em;
+        height: 500px;
+        width: 400px;
+    }
+
+    #Galeria .container
+    {
+        padding: 50px 2px;
+    }
+
+    #Galeria .tiposDeFotos
+    {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    #Galeria h3
+    {
+        margin-top: 0px;
+    }
+
+    #Galeria .fotografias
+    {
+        padding: 153px 50px;
+        margin: 70px;
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+        
+    }
+
+
+    #Contacto .container h2
+    {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #Contacto .formulario 
+    {
+       display: flex;
+       justify-content: space-evenly;
+       text-align: initial;
+       padding-left: 180px;
+        
+    }
+    
+    #Contacto .container form 
+    {
+        margin-left: 0px;
+    }
+
+    #Contacto .img_ContContact
+    {
+        
+        background-image: url(Imagenes/Contact.jpg);
+        background-size: cover;
+        background-position: center center;
+        margin-right: 180px;
+        height: 350px;
+        width: 350px;
+        border-radius: 1em;
+    }
+}
